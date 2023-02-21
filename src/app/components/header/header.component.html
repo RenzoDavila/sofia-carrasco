@@ -1,0 +1,11 @@
+<header class="mb-auto">
+  <div>
+    <h3 class="float-md-start mb-0">Cover</h3>
+    <nav class="nav nav-masthead justify-content-center float-md-end">
+      <a class="nav-link" [ngClass]="{'active' : selectedPage.page == 'home'}" (click)="changeSelected('home')" aria-current="page" href="#">HOME</a>
+      <a class="nav-link" [ngClass]="{'active' : selectedPage.page == 'music'}" (click)="changeSelected('music')" href="#">MUSIC</a>
+      <a class="nav-link" [ngClass]="{'active' : selectedPage.page == 'art'}" (click)="changeSelected('art')" href="#">VISUAL ART</a>
+      <a class="nav-link" [ngClass]="{'active' : selectedPage.page == 'contact'}" (click)="changeSelected('contact')" href="#">CONTACT</a>
+    </nav>
+  </div>
+</header>
