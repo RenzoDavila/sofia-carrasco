@@ -1,0 +1,41 @@
+:host
+  display: block
+  text-align: center
+
+.principal-container
+  // width: 100%
+  width: 106vw
+  height: 45vh
+  padding-top: 30px
+  // padding-bottom: 30px
+  margin-left: -18vw
+  max-height: 46vw
+
+.gallery-lightbox-container
+  position: relative
+  display: inline-block
+  // overflow: auto
+  // padding: 25px
+  overflow: hidden
+  height: 100%
+
+  .gallery
+    line-height: 0
+    column-count: 2
+    // column-gap: 30px
+    column-gap: 0px
+
+    .gallery-img img
+      width: 100%
+      height: auto
+      cursor: zoom-in
+      // border-radius: .35rem
+      margin-bottom: 30px
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .21)
+
+    .gallery-img:hover
+      transition: transform 1s
+      -ms-transform: scale(1.1)
+      -webkit-transform: scale(1.1)
+      transform: scale(1.1)
+
