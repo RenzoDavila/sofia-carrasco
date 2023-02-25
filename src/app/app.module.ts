@@ -11,6 +11,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { MusicComponent } from './components/music/music.component';
 import { ArtComponent } from './components/art/art.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GalleryFullComponent } from './components/gallery-full/gallery-full.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/contact/contact.component';
     GalleryComponent,
     MusicComponent,
     ArtComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryFullComponent
   ],
   imports: [
     BrowserModule,

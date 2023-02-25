@@ -1,6 +1,5 @@
 import { animate, style, transition, trigger, state } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
-import { GalleryHome } from 'src/app/consts/GalleryHome.const';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -8,25 +7,25 @@ import { GalleryHome } from 'src/app/consts/GalleryHome.const';
   styleUrls: ['./gallery.component.sass']
 })
 export class GalleryComponent implements OnInit {
-  galleryHome:any = GalleryHome;
+  @Input() galleryData:any;
   showCount = true;
   previewImage = false;
   showMask = false;
-  currentLightboxImage:any = this.galleryHome[0];
+  currentLightboxImage:any;
   currentIndex = 0;
   controls = true;
   totalImageCount = 0;
 
   ngOnInit(): void {
-    console.log("galleryHome", this.galleryHome)
-    this.totalImageCount = this.galleryHome.length;
+    this.currentLightboxImage = this.galleryData[0];
+    this.totalImageCount = this.galleryData.length;
   }
 
   onPreviewImage(index: any): void{
     this.showMask = true;
     this.previewImage = true;
     this.currentIndex = index;
-    this.currentLightboxImage = this.galleryHome[index];
+    this.currentLightboxImage = this.galleryData[index];
   }
 
   onClosePreview(){
@@ -36,18 +35,18 @@ export class GalleryComponent implements OnInit {
 
   next(){
     this.currentIndex = this.currentIndex + 1;
-    if(this.currentIndex > this.galleryHome.length - 1){
+    if(this.currentIndex > this.galleryData.length - 1){
       this.currentIndex = 0;
     }
-    this.currentLightboxImage = this.galleryHome[this.currentIndex];
+    this.currentLightboxImage = this.galleryData[this.currentIndex];
   }
 
   prev(){
     this.currentIndex = this.currentIndex - 1;
     if(this.currentIndex < 0){
-      this.currentIndex = this.galleryHome.length - 1;
+      this.currentIndex = this.galleryData.length - 1;
     }
-    this.currentLightboxImage = this.galleryHome[this.currentIndex];
+    this.currentLightboxImage = this.galleryData[this.currentIndex];
   }
 
 }
