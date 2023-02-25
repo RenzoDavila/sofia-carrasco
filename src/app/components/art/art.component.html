@@ -4,9 +4,13 @@
   </main>
 </div>
 
+<div class="mt-5 mb-3">
+  <h2 class="display-3 font-weight-bold">Last Exhibits</h2>
+</div>
 
 <div>
-  <div class="principal-div d-md-flex flex-md-equal w-100 mt-5">
+  <hr>
+  <!-- <div class="principal-div d-md-flex flex-md-equal w-100 mt-5">
     <div class="bg-light px-3 px-md-5 text-center overflow-hidden">
       <img class="principal-img" src="assets/art/contemplation/principal.jpeg" alt="principal">
     </div>
@@ -26,6 +30,29 @@
         </p>
       </div>
     </div>
+  </div> -->
+  <div class="row mb-2 principal-row">
+    <div class="col-md-6 principal-col">
+        <div class="p-4 d-flex flex-column position-static">
+          <img class="principal-img" src="assets/art/contemplation/principal.jpeg" alt="principal">
+        </div>
+    </div>
+    <div class="col-md-6 principal-col-text">
+      <div class="my-1 p-1">
+        <h2 class="display-5">Contemplation</h2>
+      </div>
+      <div class="p-4 d-flex flex-column position-static">
+        <p class="lead" style="text-align: center;">
+          Contemplation is a state of the human being in which mental silence is practiced, detachment from thoughts and sensations. It is practiced through careful and careful observation of the reality we perceive.<br/>
+          The situation we are going through has allowed us to reflect and meditate on our existence, our feelings and sensations, what is essential and necessary in our lives and what ends up being irrelevant.<br/>
+          It has allowed us to appreciate moments that used to go unnoticed in other circumstances, to rediscover materials, formats and techniques. Addressing intimate and personal subjects necessary to discover ourselves as artists.<br/>
+          We have discovered, through contemplation, the beauty and naturalness of the things that surround us. This allows us to be in harmony with our environment and reflect, managing to be present with all our "being" in everything we do and moment we live.
+        </p>
+        <p class="lead" style="text-align: center;">
+          This duo exhibition took place from November 6 - 28, 2020 in the galleries of the UNSA cultural center in Arequipa, Perú.
+        </p>
+      </div>
+    </div>
   </div>
-  <app-gallery [galleryData]="galleryArt2"></app-gallery>
+  <app-gallery-full [galleryData]="galleryArt2"></app-gallery-full>
 </div>
