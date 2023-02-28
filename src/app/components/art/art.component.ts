@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GalleryArt1, GalleryArt2 } from 'src/app/consts/GalleryArt.const';
+import { GalleryArt1, GalleryArt2, GalleryArt3, GalleryArt4 } from 'src/app/consts/GalleryArt.const';
 
 @Component({
   selector: 'app-art',
@@ -9,4 +9,6 @@ import { GalleryArt1, GalleryArt2 } from 'src/app/consts/GalleryArt.const';
 export class ArtComponent {
   galleryArt1:any = GalleryArt1;
   galleryArt2:any = GalleryArt2;
+  galleryArt3:any = GalleryArt3;
+  galleryArt4:any = GalleryArt4;
 }

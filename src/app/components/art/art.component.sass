@@ -1,9 +1,6 @@
 .overflow-hidden
   width: 50%
 
-.principal-row
-  height: 40vw
-
 .principal-col
   max-height: 100%
 
@@ -11,17 +8,31 @@
   max-height: 100%
   overflow: auto
 
-.principal-img
-  max-height: 100%
-  max-width: 100%
-
 .principal-div
-  max-height: 500px
+  height: 100%
+  padding-top: 0px !important
+  padding-bottom: 0px !important
 
 .principal-text
   overflow: auto
   max-height: 86%
 
+.principal-img
+  max-width: 100%
+  max-height: 100%
+  width: max-content
+  height: max-content
+
+@media screen and (min-width: 768px)
+  .principal-row
+    height: 90vh
+
+
 @media screen and (max-width: 768px)
   .overflow-hidden
     width: 100%
+  .principal-div, .principal-col-text
+    padding: 30px
+    padding-bottom: 0px
+  .principal-text
+    max-height: 100%

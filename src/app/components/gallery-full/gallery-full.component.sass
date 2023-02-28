@@ -2,24 +2,24 @@
   display: block
   text-align: center
 
-.principal-container
-  width: 100%
-  height: 60vh
-  padding-top: 20px
-  padding-bottom: 20px
-  max-height: 46vw
+// .principal-container
+//   width: 100%
+//   height: 60vh
+//   padding-top: 20px
+//   padding-bottom: 20px
+//   max-height: 46vw
 
 .gallery-lightbox-container
   position: relative
   display: inline-block
   overflow: auto
   padding: 25px
-  height: 100%
+  height: 46vh
+  overflow-y: hidden
   .gallery
-    line-height: 0
-    column-count: 6
+    line-height: 17
+    column-count: 5
     column-gap: 30px
-    column-gap: 0px
     height: 100%
     .gallery-img
       height: 100%
@@ -125,7 +125,7 @@
 
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
   .gallery-lightbox-container
     .gallery
       column-count: 3
