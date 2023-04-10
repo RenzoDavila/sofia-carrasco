@@ -1,14 +1,6 @@
 
 <div class="principal">
   <app-header></app-header>
-
-  <app-home *ngIf="(selectedPage$ | async)?.page == 'home'"></app-home>
-
-  <app-music *ngIf="(selectedPage$ | async)?.page == 'music'"></app-music>
-
-  <app-art *ngIf="(selectedPage$ | async)?.page == 'art'"> ART </app-art>
-
-  <app-contact *ngIf="(selectedPage$ | async)?.page == 'contact'"> CONTACT </app-contact>
-
+  <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
