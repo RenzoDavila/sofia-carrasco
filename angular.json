@@ -31,7 +31,7 @@
             ],
             "styles": [
               "src/styles.sass",
-              "node_modules/bootswatch/dist/sketchy/bootstrap.min.css"
+              "node_modules/bootswatch/dist/yeti/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"

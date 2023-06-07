@@ -6,9 +6,7 @@
       </div>
     </div>
     <div *ngIf="showMask" class="lightbox">
-
-      <div class="close-background" (click)="onClosePreview()">
-      </div>
+      <div class="close-background" (click)="onClosePreview()"></div>
 
       <span *ngIf="showCount" class="count">{{currentIndex + 1}}/{{totalImageCount}}</span>
       <button *ngIf="previewImage" class="close-btn" (click)="onClosePreview()">

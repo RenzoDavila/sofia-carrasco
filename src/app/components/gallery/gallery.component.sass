@@ -3,13 +3,11 @@
   text-align: center
 
 .principal-container
-  // width: 100%
-  width: 110vw
   height: 60vh
   padding-top: 30px
-  // padding-bottom: 30px
-  margin-left: -8vw
   max-height: 30vw
+  margin-left: -16px
+  margin-right: -16px
 
 .gallery-lightbox-container
   position: relative
@@ -23,7 +21,7 @@
     column-count: 2
     // column-gap: 30px
     column-gap: 0px
-    margin-top: -150px
+    margin-top: -14%
     .gallery-img img
       width: 100%
       height: auto
@@ -38,6 +36,7 @@
       transform: scale(1.1)
 
   .lightbox
+    z-index: 1
     display: flex
     align-items: center
     justify-content: center
@@ -123,11 +122,3 @@
   .lightbox img
     max-height: 90vh
     max-width: 90vw
-
-
-// @media screen and (max-width: 650px)
-//   .gallery-lightbox-container
-//     .gallery
-//       column-count: 1
-//       .gallery-img img
-//         width: 100%

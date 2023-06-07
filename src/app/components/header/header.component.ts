@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Page } from 'src/app/models/page.model';
-import { ObservableService } from 'src/app/services/observable/observable.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,21 +7,10 @@ import { ObservableService } from 'src/app/services/observable/observable.servic
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent {
-  selectedPage: Page = {
-    page: 'home'
-  };
 
-  constructor(private observableService: ObservableService) {}
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
-    this.observableService.selectedPage$.subscribe((page:Page) => this.selectedPage = page)
-  }
-
-  changeSelected(page: string){
-    let tempSelectedPage : Page = {
-      page: page
-    };
-    this.observableService.setPage(tempSelectedPage)
   }
 
 }

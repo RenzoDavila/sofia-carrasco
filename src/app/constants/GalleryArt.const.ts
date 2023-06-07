@@ -75,6 +75,11 @@ export const GalleryArt3 = [
     imageAlt: '6',
     imageName: 'Un día eterno'
   },
+  {
+    imageSrc: 'assets/art/ambivalent/7.jpg',
+    imageAlt: '7',
+    imageName: 'Postal'
+  },
 ]
 
 export const GalleryArt4 = [
