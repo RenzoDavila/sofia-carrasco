@@ -22,10 +22,10 @@ export class GalleryComponent implements OnInit {
   }
 
   onPreviewImage(index: any): void{
-    this.showMask = true;
-    this.previewImage = true;
-    this.currentIndex = index;
-    this.currentLightboxImage = this.galleryData[index];
+    // this.showMask = true;
+    // this.previewImage = true;
+    // this.currentIndex = index;
+    // this.currentLightboxImage = this.galleryData[index];
   }
 
   onClosePreview(){
