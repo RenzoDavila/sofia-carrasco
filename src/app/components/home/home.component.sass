@@ -13,8 +13,8 @@
 
 .principal-container
   height: 60vh
+  max-height: 36vw
   padding-top: 30px
-  max-height: 30vw
   margin-left: -16px
   margin-right: -16px
 
@@ -132,3 +132,20 @@
   .lightbox img
     max-height: 90vh
     max-width: 90vw
+
+@media screen and (max-width: 768px)
+  .principal-container
+    height: 100vh
+    max-height: 43.5vw
+    margin-left: -16px
+    margin-right: -16px
+
+  .gallery-lightbox-container
+    position: relative
+    .gallery
+      margin-top: 0
+      padding-top: 0
+
+@media screen and (max-width: 320px)
+  .principal-container
+    max-height: 49vw
